@@ -25,6 +25,7 @@ const Filters = () => {
   const categories = getUniqueValues(all_products, "category");
   const companies = getUniqueValues(all_products, "company");
   const colors = getUniqueValues(all_products, "color");
+  console.log('Unique Colors:', colors);
   return (
     <Wrapper>
       <div className="content">
@@ -107,7 +108,7 @@ const Filters = () => {
                     data-color={c}
                     onClick={updateFilters}
                   >
-                    {color === c ? <FaCheck /> : null}
+                    {color === c ? <FaCheck/> : null}
                   </button>
                 );
               })}
