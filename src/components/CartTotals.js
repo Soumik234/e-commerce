@@ -12,7 +12,7 @@ const CartTotals = () => {
       <div>
         <article>
           <h5>
-            subtotal: <span>{formatPrice()}</span>
+            subtotal: <span>{formatPrice(total_amount)}</span>
           </h5>
           <p>
             shipping_fee: <span>{formatPrice(shipping_fee)}</span>
