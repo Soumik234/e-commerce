@@ -14,7 +14,9 @@ root.render(
   <Auth0Provider
     domain={process.env.REACT_APP_domainName}
     clientId={process.env.REACT_APP_client_id}
-    redirectUri={window.location.origin}
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
     cacheLocation="localstorage"
   >
   <UserProvider>

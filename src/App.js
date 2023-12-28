@@ -4,10 +4,11 @@ import { Navbar, Sidebar, Footer } from "./components";
 import styled from "styled-components";
 import { Home, Products,SingleProduct,About,Cart,Error,Checkout,PrivateRoute} from "./pages";
 import Nav from "./components/Navbar";
+import AuthWrapper from "./pages/AuthWrapper";
 
 function App() {
   return(
-    
+    <AuthWrapper>
     <Router>
     <Navbar/>
     <Sidebar/>
@@ -25,15 +26,16 @@ function App() {
           <Products/>
         </Route>
         <Route exact path='/products/:id' children={<SingleProduct/>}/>
-        <Route exact path='/checkout'>
+        <PrivateRoute exact path='/checkout'>
           <Checkout/>
-        </Route>
+        </PrivateRoute>
         <Route exact path='*'>
           <Error/>
         </Route>
       </Switch>
       <Footer/>
     </Router>
+</AuthWrapper>
   )
   
 }
