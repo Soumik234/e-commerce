@@ -9,8 +9,8 @@ import { useProductsContext } from "../context/products_context";
 import { useUserContext } from "../context/user_context";
 
 const Nav = () => {
-  const {openSidebar}= useProductsContext()
-  const {myUser}=useUserContext()
+  const { openSidebar } = useProductsContext();
+  const { myUser } = useUserContext();
   return (
     <NavContainer>
       <div className="nav-center">
@@ -23,19 +23,21 @@ const Nav = () => {
           </button>
         </div>
         <ul className="nav-links">
-          {links.map((link)=>{
-            const {id,text,url}=link;
-            return(<li key={id}>
-              <Link to ={url}>{text}</Link>
-            </li>)
+          {links.map((link) => {
+            const { id, text, url } = link;
+            return (
+              <li key={id}>
+                <Link to={url}>{text}</Link>
+              </li>
+            );
           })}
-          {
-            myUser && <li>
+          {myUser && (
+            <li>
               <Link to="/checkout">checkout</Link>
             </li>
-          }
+          )}
         </ul>
-        <CartButtons/>
+        <CartButtons />
       </div>
     </NavContainer>
   );
@@ -72,6 +74,7 @@ const NavContainer = styled.nav`
   }
   .nav-links {
     display: none;
+    font-weight: 590;
   }
   .cart-btn-wrapper {
     display: none;
@@ -94,6 +97,7 @@ const NavContainer = styled.nav`
       a {
         color: var(--clr-grey-3);
         font-size: 1rem;
+  
         text-transform: capitalize;
         letter-spacing: var(--spacing);
         padding: 0.5rem;

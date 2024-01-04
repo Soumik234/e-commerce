@@ -17,8 +17,8 @@ const Sidebar = () => {
         className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
       >
         <div className="sidebar-header">
-          <img src={logo} className="logo" alt="comfy sloth" />
-          <button className="close-btn" type="button" onClick={closeSidebar}>
+          <img src={logo} className="logo" alt="coding addict" />
+          <button className="close-btn" onClick={closeSidebar}>
             <FaTimes />
           </button>
         </div>
@@ -40,6 +40,7 @@ const Sidebar = () => {
             </li>
           )}
         </ul>
+        <CartButtons />
       </aside>
     </SidebarContainer>
   );
@@ -75,6 +76,7 @@ const SidebarContainer = styled.div`
   }
   .links a {
     display: block;
+    font-weight: 600;
     text-align: left;
     font-size: 1rem;
     text-transform: capitalize;
