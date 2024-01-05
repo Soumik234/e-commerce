@@ -6,7 +6,7 @@ import aboutImg from "../assets/hero-bcg.jpeg";
 const AboutPage = () => {
   return (
     <main>
-      <PageHero title='about'/>
+      <PageHero title="about" />
       <Wrapper className="page section section-center">
         <img src={aboutImg} alt="desk" />
         <article>
@@ -15,14 +15,16 @@ const AboutPage = () => {
             <div className="underline"></div>
           </div>
           <p>
-            Consectetur adipisicing commodo incididunt magna. Anim incididunt
-            non enim cupidatat officia cillum laborum nulla tempor pariatur. Est
-            ut nostrud nisi est est magna exercitation consectetur aliqua nisi
-            minim sint nostrud. Adipisicing elit ullamco velit excepteur
-            adipisicing magna duis incididunt labore eu ex. Exercitation
-            excepteur laborum dolor sint non ad. Reprehenderit fugiat amet aute
-            labore officia sunt adipisicing officia sunt duis ipsum
-            reprehenderit laborum.
+            Born from a passion for redefining spaces, our journey began with a
+            vision to curate exquisite furniture. Embracing craftsmanship and
+            style, we aimed to elevate homes worldwide. Starting humbly, we
+            scoured the globe for unique pieces, driven by a commitment to
+            quality and innovation. Over time, our dedication evolved into a
+            curated collection, blending comfort and aesthetics. Our story is
+            one of relentless pursuit—to inspire individuals in designing spaces
+            that reflect their essence. Today, we stand as a beacon of exquisite
+            furniture, offering a narrative of style, comfort, and unparalleled
+            quality for homes seeking timeless elegance.
           </p>
         </article>
       </Wrapper>
