@@ -13,15 +13,18 @@ const Hero = () => {
           comfort zone
         </h1>
         <p>
-          In non est dolor sit. Ad sit irure consequat culpa ea consectetur.
-          Elit est in duis tempor sunt. Incididunt consectetur excepteur et
-          tempor anim et Lorem. Amet culpa qui proident aute eu.
+          Discover curated furniture for your ideal comfort. Explore premium
+          sofas, chairs, and tables, harmonizing style and function. Redefine
+          your space effortlessly with quality craftsmanship, inviting you to
+          design your perfect comfort zone.
         </p>
-        <Link to='/products' className="btn hero-btn">shop now</Link>
+        <Link to="/products" className="btn hero-btn">
+          shop now
+        </Link>
       </article>
       <article className="img-container">
-        <img src={heroBcg} alt="table" className="main-img"/>
-        <img src={heroBcg2} alt="table" className="accent-img"/>
+        <img src={heroBcg} alt="table" className="main-img" />
+        <img src={heroBcg2} alt="table" className="accent-img" />
       </article>
     </Wrapper>
   );

@@ -50,6 +50,7 @@ const Wrapper = styled.div`
 
   .cart-btn {
     color: var(--clr-grey-1);
+    font-weight:600;
     font-size: 1.5rem;
     letter-spacing: var(--spacing);
     color: var(--clr-grey-1);
@@ -87,6 +88,7 @@ const Wrapper = styled.div`
     background: transparent;
     border-color: transparent;
     font-size: 1.5rem;
+    font-weight:600;
     cursor: pointer;
     color: var(--clr-grey-1);
     letter-spacing: var(--spacing);

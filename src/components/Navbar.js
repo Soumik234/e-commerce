@@ -7,6 +7,7 @@ import { links } from "../utils/constants";
 import CartButtons from "./CartButtons";
 import { useProductsContext } from "../context/products_context";
 import { useUserContext } from "../context/user_context";
+import coconut from "../assets/coconut.png"
 
 const Nav = () => {
   const { openSidebar } = useProductsContext();
@@ -16,7 +17,7 @@ const Nav = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <img src={logo} alt="comfy sloth" />
+            <img src={coconut} alt="comfy sloth" />
           </Link>
           <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
@@ -59,8 +60,11 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     img {
-      width: 175px;
+      width: 350px;
+      height: 85px;
+      object-fit: cover;
       margin-left: -15px;
+      object-position: center; 
     }
   }
   .nav-toggle {
@@ -96,8 +100,7 @@ const NavContainer = styled.nav`
       }
       a {
         color: var(--clr-grey-3);
-        font-size: 1rem;
-  
+        font-size: 1.25rem;
         text-transform: capitalize;
         letter-spacing: var(--spacing);
         padding: 0.5rem;
