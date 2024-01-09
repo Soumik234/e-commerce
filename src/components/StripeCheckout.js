@@ -30,7 +30,7 @@ const CheckoutForm = () => {
   const createPaymentIntent = async () => {
     try {
       const { data } = await axios.post(
-        'http://localhost:8888/.netlify/functions/create-payment-intent',
+        '.netlify/functions/create-payment-intent',
 
         JSON.stringify({ cart, shipping_fee, total_amount })
       );
@@ -62,8 +62,6 @@ const CheckoutForm = () => {
     },
   };
   const handleChange = async (event) => {
-    // Listen for changes in the CardElement
-    // and display any errors as the customer types their card details
     setDisabled(event.empty);
     setError(event.error ? event.error.message : '');
   };
