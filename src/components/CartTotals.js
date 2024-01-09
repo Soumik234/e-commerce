@@ -1,4 +1,3 @@
-import React, { useContext } from "react";
 import styled from "styled-components";
 import { useCartContext } from "../context/cart_context";
 import { useUserContext } from "../context/user_context";
